@@ -12,6 +12,18 @@ macOS-oriented **Session OS + Memory** desktop app: calendar digests, **Agent** 
 
 ## English
 
+### Download
+
+- **macOS** (Apple Silicon + Intel universal): [Latest release](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest)
+- Open the DMG and drag **Agent Resume** into **Applications**.
+- **First launch:** macOS may block the app because it is not notarized. Right-click the app → **Open** once, or run:
+
+  ```bash
+  xattr -cr "/Applications/Agent Resume.app"
+  ```
+
+Older versions and release notes: [All releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases).
+
 ### Navigation
 
 | Entry | Role |
@@ -58,6 +70,18 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 
 > **无云端 · 纯本机存储**  
 > 数据默认在 **`~/.agent-resume-panel`**（与 VS Code 扩展共用，可在设置中修改）。
+
+### 下载安装
+
+- **macOS**（Apple Silicon + Intel 通用包）：[最新版本](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest)
+- 打开 DMG，将 **Agent Resume** 拖入 **应用程序**。
+- **首次打开：** 应用未经 Apple 公证，macOS 可能拦截。请右键应用 → **打开** 一次，或执行：
+
+  ```bash
+  xattr -cr "/Applications/Agent Resume.app"
+  ```
+
+历史版本与更新说明：[全部 Releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases)。
 
 ### 导航
 
