@@ -100,9 +100,3 @@ Local-first under `~/.agent-resume-panel` (shared `panelHome` with the VS Code e
 
 - [VS Code extension documentation](https://github.com/lucacicii/agent-resume-panel-doc)
 - [Source repository](https://github.com/lucacicii/agent-resume-panel)
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
