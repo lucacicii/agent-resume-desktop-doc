@@ -6,7 +6,7 @@ on:
       version:
         description: "Desktop version tag (e.g. 0.1.0 → v0.1.0)"
         required: true
-        default: "0.1.0"
+        default: "0.1.1"
       panel_ref:
         description: "agent-resume-panel git ref to build"
         required: true
