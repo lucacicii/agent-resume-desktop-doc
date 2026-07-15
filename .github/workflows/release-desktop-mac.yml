@@ -1,0 +1,53 @@
+name: Release Desktop (macOS)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Desktop version tag (e.g. 0.1.0 → v0.1.0)"
+        required: true
+        default: "0.1.0"
+      panel_ref:
+        description: "agent-resume-panel git ref to build"
+        required: true
+        default: "develop"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout panel (private)
+        uses: actions/checkout@v4
+        with:
+          repository: lucacicii/agent-resume-panel
+          token: ${{ secrets.PANEL_REPO_PAT }}
+          ref: ${{ inputs.panel_ref }}
+          path: panel
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: panel/package-lock.json
+
+      - name: Install and pack
+        working-directory: panel
+        run: |
+          npm ci
+          npm run pack:desktop
+
+      - name: Upload DMG to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          TAG="v${VERSION}"
+          DMG="panel/apps/desktop/release/Agent Resume-${VERSION}.dmg"
+          test -f "$DMG" || (echo "Missing $DMG" && exit 1)
+          gh release upload "$TAG" "$DMG" \
+            --repo lucacicii/agent-resume-desktop-doc \
+            --clobber
