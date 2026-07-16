@@ -10,6 +10,22 @@ This file tracks **Agent Resume Desktop** (macOS) releases and follows [Keep a C
 
 ## 简体中文
 
+### [0.1.2]
+
+#### 新增
+
+- **完整三语界面**：桌面端英文、简体中文、日文翻译已补全。
+- **独立桌面语言包**：桌面端 locale 与 VS Code 扩展分离，仅包含 `desktop.*` 键。
+
+#### 改进
+
+- **语言覆盖检查**：新增翻译完整性校验脚本。
+- **日文 locale 流水线**：桌面端日文由 catalog 直接生成，不再回退英文。
+
+#### 修复
+
+- **macOS 打包**：修复重复打包时 electron 符号链接冲突。
+
 ### [0.1.1]
 
 #### 修复
@@ -41,6 +57,22 @@ This file tracks **Agent Resume Desktop** (macOS) releases and follows [Keep a C
 - 本构建为 ad-hoc 签名，未经 Apple 公证
 
 ## English
+
+### [0.1.2]
+
+#### Added
+
+- **Full trilingual UI**: complete English, Simplified Chinese, and Japanese translations for the desktop app.
+- **Dedicated desktop locales**: desktop strings are separated from the VS Code extension and scoped to `desktop.*` keys.
+
+#### Improved
+
+- **Translation coverage checks**: new script to detect untranslated strings.
+- **Japanese locale pipeline**: desktop Japanese is generated from the catalog instead of falling back to English.
+
+#### Fixed
+
+- **macOS packaging**: fixed electron symlink `EEXIST` error on repeated `pack:mac` runs.
 
 ### [0.1.1]
 
