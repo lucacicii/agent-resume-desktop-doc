@@ -14,17 +14,29 @@ This file tracks **Agent Resume Desktop** (macOS) releases and follows [Keep a C
 
 #### 新增
 
-- **完整三语界面**：桌面端英文、简体中文、日文翻译已补全。
-- **独立桌面语言包**：桌面端 locale 与 VS Code 扩展分离，仅包含 `desktop.*` 键。
+- **添加应用内版本检查与更新入口**
+- **add terminal status bar with live cwd and git branch**：终端状态栏显示实时工作目录与 Git 分支
+- **add workbench side panel with explorer and nested git scan**：Workbench 侧边栏，含文件浏览与嵌套 Git 仓库扫描
+- **add git log graph to workbench side panel**：Workbench 侧边栏 Git Log 分支图
+- **complete en/zh-cn/ja translations with zh-cn baseline audit**：补全英文、简体中文、日文翻译（以中文为基准校对）
+- **separate extension/desktop locales and prune dead keys**：桌面端 locale 与扩展分离，并清理无用键
 
 #### 改进
 
-- **语言覆盖检查**：新增翻译完整性校验脚本。
-- **日文 locale 流水线**：桌面端日文由 catalog 直接生成，不再回退英文。
+- **show project path in workbench detail header**：Workbench 详情头显示项目路径
+- **show nested git repos in terminal status bar**：终端状态栏显示嵌套 Git 仓库
+- **click status bar branch to switch with git IPC**：点击状态栏分支切换分支
+- **git side panel actions and project-linked explorer**：侧边栏 Git 操作与项目关联文件浏览
+- **重构 Git Log 分支图并优化节点信息展示**
+- **优化顶部栏图标并改进版本更新提示**
+- **align post-refactor paths and harden desktop dev**：对齐重构后路径并加固桌面开发流程
 
 #### 修复
 
-- **macOS 打包**：修复重复打包时 electron 符号链接冲突。
+- **修复 Report 并行生成时详情区 loading 错乱**
+- **修复更新按钮与 About 页状态不一致**
+- **hoist electron install so dev binary is available**：提升 electron 安装位置，确保开发二进制可用
+- **remove stale electron symlink before pack**：打包前移除过期 electron 符号链接，避免 `EEXIST`
 
 ### [0.1.1]
 
@@ -62,17 +74,29 @@ This file tracks **Agent Resume Desktop** (macOS) releases and follows [Keep a C
 
 #### Added
 
-- **Full trilingual UI**: complete English, Simplified Chinese, and Japanese translations for the desktop app.
-- **Dedicated desktop locales**: desktop strings are separated from the VS Code extension and scoped to `desktop.*` keys.
+- **Add in-app version check and update entry**
+- **add terminal status bar with live cwd and git branch**
+- **add workbench side panel with explorer and nested git scan**
+- **add git log graph to workbench side panel**
+- **complete en/zh-cn/ja translations with zh-cn baseline audit**
+- **separate extension/desktop locales and prune dead keys**
 
 #### Improved
 
-- **Translation coverage checks**: new script to detect untranslated strings.
-- **Japanese locale pipeline**: desktop Japanese is generated from the catalog instead of falling back to English.
+- **show project path in workbench detail header**
+- **show nested git repos in terminal status bar**
+- **click status bar branch to switch with git IPC**
+- **git side panel actions and project-linked explorer**
+- **Refactor Git Log branch graph and improve node info display**
+- **Improve top bar icons and version update prompts**
+- **align post-refactor paths and harden desktop dev**
 
 #### Fixed
 
-- **macOS packaging**: fixed electron symlink `EEXIST` error on repeated `pack:mac` runs.
+- **Fix detail panel loading glitches during parallel Report generation**
+- **Fix update button and About page status mismatch**
+- **hoist electron install so dev binary is available**
+- **remove stale electron symlink before pack**
 
 ### [0.1.1]
 
