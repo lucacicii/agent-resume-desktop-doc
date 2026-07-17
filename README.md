@@ -11,7 +11,7 @@ Pairs with the **Agent Resume Panel VS Code extension** — same agent sessions,
 | **Install** | [Download DMG](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) |
 | **Docs** | This repo | [panel-doc](https://github.com/lucacicii/agent-resume-panel-doc) |
 
-Desktop version: **0.1.2** · [Changelog](CHANGELOG.md) · [All releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases) · Extension: **2.6.6**
+Desktop version: **0.1.2** · [Changelog](CHANGELOG.md) · [All releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases) · Extension: **2.6.9**
 
 > **No cloud · Local-first**  
 > Data is stored under **`~/.agent-resume-panel`** by default (shared with the VS Code extension; change in settings).  
@@ -21,7 +21,7 @@ Desktop version: **0.1.2** · [Changelog](CHANGELOG.md) · [All releases](https:
 
 ## English
 
-### Download
+### Download & install
 
 - **macOS** (Apple Silicon + Intel universal): [Latest release](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest)
 - Open the DMG and drag **Agent Resume** into **Applications**.
@@ -31,57 +31,51 @@ Desktop version: **0.1.2** · [Changelog](CHANGELOG.md) · [All releases](https:
   xattr -cr "/Applications/Agent Resume.app"
   ```
 
-Version history: [Changelog](CHANGELOG.md) · per-release notes: [All releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases).
+Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CHANGELOG.md).
 
-### Navigation
+### Documentation by module
+
+| Module | What it covers |
+|--------|----------------|
+| [Report](report.md) | Calendar, daily/weekly/monthly digests, GTD bar, analyze → apply |
+| [Agent](agent.md) | Natural-language Q&A over digests and history, threads |
+| [Workbench](workbench.md) | Embedded terminal, multi-tab resume, git status bar, explorer, git log |
+| [Sessions](sessions.md) | Reference list and read-only preview |
+| [Notes](notes.md) | Markdown editor shared with the extension |
+| [Settings & data](settings-and-data.md) | Settings panes, data directory, usage, in-app updates |
+
+### Navigation (at a glance)
 
 | Entry | Role |
 |-------|------|
-| **Report** (default) | Calendar · daily/weekly/monthly digests · GTD bar · day detail |
-| **Agent** | Natural-language Q&A over digests |
-| **Workbench** | Session list + embedded or external terminal resume |
-| **Sessions** | Reference list + read-only preview |
-| **Notes** | Markdown note editor |
-| **⚙ Settings** | General, models, sessions, workbench, memory, data, usage |
-
-### Report & GTD
-
-1. Generate **daily / weekly / monthly** digests from the right panel (click the calendar to sync the daily date).
-2. Use **Analyze GTD + todolist from weekly/monthly reports** to open an editable preview.
-3. Apply selected items to update session GTD labels and project task lists.
-
-Historical backfill: **Settings → General**.
-
-### Workbench
-
-- Create sessions (default agent: **Settings → Workbench**).
-- Resume in embedded terminal or system default terminal.
-- **⌘T** can be configured for new session or new terminal.
-
-### Data & backup
-
-Data lives under **`~/.agent-resume-panel`**: session index, notes, reports, and desktop settings. Back up this folder when moving machines.
-
-### Feedback & support
-
-- **Bugs / feature requests**: [GitHub Issues](https://github.com/lucacicii/agent-resume-desktop-doc/issues)
-- Do not paste API keys, full transcripts, or sensitive paths in issues.
+| **Report** (default) | Calendar · digests · GTD bar · day detail |
+| **Agent** | Q&A over digests / work history |
+| **Workbench** | Session list + embedded or external terminal |
+| **Notes** | Markdown notes |
+| **Sessions** (toolbar) | Reference list + preview |
+| **⚙ Settings** | General, models, sessions, workbench, report, data, usage, about |
 
 ### VS Code extension vs Desktop
 
 | | **Agent Resume Desktop** | **VS Code extension** |
 |---|---|---|
 | **What it is** | Standalone macOS app — **Session OS + Memory** | Sidebar panel inside VS Code / Cursor / VSCodium |
-| **Best for** | Calendar digests, **Agent** Q&A over work history, embedded **Workbench** | Resume while coding; **ACP Chat** beside the editor; GTD / Notes in the IDE |
-| **Desktop-only** | Daily / weekly / monthly digests; semantic recall over reports; xterm Workbench | — |
+| **Best for** | Calendar digests, **Agent** Q&A, embedded **Workbench** | Resume while coding; **ACP Chat**; GTD / Notes in the IDE |
+| **Desktop-only** | Daily / weekly / monthly digests; semantic recall over reports; xterm Workbench + git tools | — |
 | **Extension-only** | — | ACP Chat; Claude / Codex IDE panel resume; Ghostty / Alma targets |
 
 **Shared:** `catalog.db`, GTD tags, Notes, LLM settings (`settings.json`). Desktop extras live under `panelHome/.desktop/`.
 
 [Download Desktop](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · [Install extension](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) · [Extension docs](https://github.com/lucacicii/agent-resume-panel-doc)
 
+### Feedback & support
+
+- **Bugs / feature requests**: [GitHub Issues](https://github.com/lucacicii/agent-resume-desktop-doc/issues)
+- Do not paste API keys, full transcripts, or sensitive paths in issues.
+
 ### Related links
 
+- [Changelog](CHANGELOG.md)
 - [VS Code extension documentation](https://github.com/lucacicii/agent-resume-panel-doc)
 - [Install VS Code extension](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2)
 
@@ -98,7 +92,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 | **安装** | [下载 DMG](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) |
 | **文档** | 本仓库 | [panel-doc](https://github.com/lucacicii/agent-resume-panel-doc) |
 
-桌面端版本：**0.1.2** · [更新日志](CHANGELOG.md) · [全部 Releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases) · 扩展：**2.6.6**
+桌面端版本：**0.1.2** · [更新日志](CHANGELOG.md) · [全部 Releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases) · 扩展：**2.6.9**
 
 > **无云端 · 纯本机存储**  
 > 数据默认在 **`~/.agent-resume-panel`**（与 VS Code 扩展共用，可在设置中修改）。
@@ -113,39 +107,29 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
   xattr -cr "/Applications/Agent Resume.app"
   ```
 
-版本历史：[更新日志](CHANGELOG.md) · 单版说明：[全部 Releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases)。
+系统要求：macOS 12+，Apple Silicon 或 Intel。版本历史：[更新日志](CHANGELOG.md)。
 
-### 导航
+### 按模块阅读
+
+| 模块 | 内容 |
+|------|------|
+| [Report](report.md) | 日历、日/周/月报、GTD 条、分析并应用 |
+| [Agent](agent.md) | 基于报告与历史的自然语言问答、线程 |
+| [Workbench](workbench.md) | 内嵌终端、多标签恢复、Git 状态栏、资源管理器、Git Log |
+| [Sessions](sessions.md) | 参考列表与只读预览 |
+| [Notes](notes.md) | 与扩展共用的 Markdown 笔记 |
+| [设置与数据](settings-and-data.md) | 各设置页、数据目录、用量、应用内更新 |
+
+### 导航一览
 
 | 入口 | 作用 |
 |------|------|
-| **Report**（默认） | 日历 · 日/周/月报 · GTD 条 · 当日详情 |
-| **Agent** | 基于报告的自然语言问答 |
-| **Workbench** | 会话列表 + 嵌入式 / 外部终端恢复 |
-| **Sessions** | 参考列表 + 只读预览 |
-| **Notes** | Markdown 笔记编辑 |
-| **⚙ Settings** | 通用 / 模型 / Sessions / Workbench / Memory / 数据 / 用量 |
-
-### Report 与 GTD
-
-1. 右侧生成 **日 / 周 / 月报**（点击日历同步日报日期）。
-2. **从周报/月报分析 GTD + todolist** 打开可编辑预览。
-3. 确认后应用 → 更新 GTD 标记与项目待办。
-
-历史回填：**Settings → 通用**。
-
-### Workbench
-
-新建 Session、嵌入式或系统终端恢复；**⌘T** 与默认 Agent 在 **Settings → Workbench** 配置。
-
-### 数据与备份
-
-数据在 **`~/.agent-resume-panel`**，换机请自行备份该目录。
-
-### 反馈与支持
-
-- [GitHub Issues](https://github.com/lucacicii/agent-resume-desktop-doc/issues)
-- 请勿粘贴 API Key、完整对话内容或敏感路径。
+| **Report**（默认） | 日历 · 回顾 · GTD 条 · 日详情 |
+| **Agent** | 对报告 / 工作历史问答 |
+| **Workbench** | 会话列表 + 嵌入式 / 外部终端 |
+| **Notes** | Markdown 笔记 |
+| **Sessions**（工具栏） | 参考列表 + 预览 |
+| **⚙ Settings** | 通用、模型、会话、工作台、Report、数据、用量、关于 |
 
 ### VS Code 扩展 vs Desktop
 
@@ -153,14 +137,20 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 |---|---|---|
 | **定位** | 独立 macOS 应用 — **Session OS + Memory** | VS Code / Cursor / VSCodium 侧边栏面板 |
 | **适合场景** | 日历日报、对报告 **Agent** 问答、内嵌 **Workbench** | 写代码时恢复会话；编辑器旁 **ACP Chat**；IDE 内 GTD / 笔记 |
-| **仅 Desktop** | 日 / 周 / 月 Digest；基于报告的语义回忆；xterm Workbench | — |
+| **仅 Desktop** | 日 / 周 / 月 Digest；基于报告的语义回忆；xterm Workbench + Git 工具 | — |
 | **仅扩展** | — | ACP Chat；Claude / Codex 插件面板恢复；Ghostty / Alma |
 
 **共用：** `catalog.db`、GTD、Notes、LLM 设置（`settings.json`）。Desktop 私有数据在 `panelHome/.desktop/`。
 
 [下载 Desktop](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · [安装扩展](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) · [扩展文档](https://github.com/lucacicii/agent-resume-panel-doc)
 
+### 反馈与支持
+
+- [GitHub Issues](https://github.com/lucacicii/agent-resume-desktop-doc/issues)
+- 请勿粘贴 API Key、完整对话内容或敏感路径。
+
 ### 相关链接
 
+- [更新日志](CHANGELOG.md)
 - [VS Code 扩展用户文档](https://github.com/lucacicii/agent-resume-panel-doc)
 - [安装 VS Code 扩展](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2)
