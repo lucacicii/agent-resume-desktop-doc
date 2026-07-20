@@ -70,6 +70,7 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 
 ### Feedback & support
 
+- **Discord community**: [discord.gg/CG2esx7K7](https://discord.gg/CG2esx7K7)
 - **Bugs / feature requests**: [GitHub Issues](https://github.com/lucacicii/agent-resume-desktop-doc/issues)
 - Do not paste API keys, full transcripts, or sensitive paths in issues.
 
@@ -146,6 +147,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 
 ### 反馈与支持
 
+- **Discord 社区**：[discord.gg/CG2esx7K7](https://discord.gg/CG2esx7K7)
 - [GitHub Issues](https://github.com/lucacicii/agent-resume-desktop-doc/issues)
 - 请勿粘贴 API Key、完整对话内容或敏感路径。
 
