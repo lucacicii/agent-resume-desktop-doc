@@ -11,7 +11,7 @@ Pairs with the **Agent Resume Panel VS Code extension** — same agent sessions,
 | **Install** | [Download DMG](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) |
 | **Docs** | This repo | [panel-doc](https://github.com/lucacicii/agent-resume-panel-doc) |
 
-Desktop version: **0.1.2** · [Changelog](CHANGELOG.md) · [All releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases) · Extension: **2.6.9**
+[Changelog](CHANGELOG.md) · [Latest release](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · Extension: **2.6.10**
 
 > **No cloud · Local-first**  
 > Data is stored under **`~/.agent-resume-panel`** by default (shared with the VS Code extension; change in settings).  
@@ -93,7 +93,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 | **安装** | [下载 DMG](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) |
 | **文档** | 本仓库 | [panel-doc](https://github.com/lucacicii/agent-resume-panel-doc) |
 
-桌面端版本：**0.1.2** · [更新日志](CHANGELOG.md) · [全部 Releases](https://github.com/lucacicii/agent-resume-desktop-doc/releases) · 扩展：**2.6.9**
+[更新日志](CHANGELOG.md) · [最新版本](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · 扩展：**2.6.10**
 
 > **无云端 · 纯本机存储**  
 > 数据默认在 **`~/.agent-resume-panel`**（与 VS Code 扩展共用，可在设置中修改）。
