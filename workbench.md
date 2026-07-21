@@ -44,7 +44,7 @@ Languages: [English](#english) | [简体中文](#简体中文)
 ### Related
 
 - [Sessions](sessions.md) · [Report](report.md) · [Settings & data](settings-and-data.md)  
-- Extension resume targets (Ghostty, IDE panels, Alma): [panel-doc Resume](https://github.com/lucacicii/agent-resume-panel-doc/blob/main/resume-and-targets.md)
+- Extension resume targets (Ghostty, IDE panels): [panel-doc Resume](https://github.com/lucacicii/agent-resume-panel-doc/blob/main/resume-and-targets.md)
 
 ---
 
@@ -86,4 +86,4 @@ Languages: [English](#english) | [简体中文](#简体中文)
 ### 相关文档
 
 - [Sessions](sessions.md) · [Report](report.md) · [设置与数据](settings-and-data.md)  
-- 扩展恢复目标（Ghostty、IDE 面板、Alma）：[panel-doc 恢复](https://github.com/lucacicii/agent-resume-panel-doc/blob/main/resume-and-targets.md)
+- 扩展恢复目标（Ghostty、IDE 面板）：[panel-doc 恢复](https://github.com/lucacicii/agent-resume-panel-doc/blob/main/resume-and-targets.md)

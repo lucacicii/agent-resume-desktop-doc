@@ -11,7 +11,7 @@ Pairs with the **Agent Resume Panel VS Code extension** — same agent sessions,
 | **Install** | [Download DMG](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) |
 | **Docs** | This repo | [panel-doc](https://github.com/lucacicii/agent-resume-panel-doc) |
 
-[Changelog](CHANGELOG.md) · [Latest release](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · Extension: **2.6.10**
+[Changelog](CHANGELOG.md) · [Latest release](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · Extension: **2.6.12**
 
 > **No cloud · Local-first**  
 > Data is stored under **`~/.agent-resume-panel`** by default (shared with the VS Code extension; change in settings).  
@@ -62,7 +62,7 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 | **What it is** | Standalone macOS app — **Session OS + Memory** | Sidebar panel inside VS Code / Cursor / VSCodium |
 | **Best for** | Calendar digests, **Agent** Q&A, embedded **Workbench** | Resume while coding; **ACP Chat**; GTD / Notes in the IDE |
 | **Desktop-only** | Daily / weekly / monthly digests; semantic recall over reports; xterm Workbench + git tools | — |
-| **Extension-only** | — | ACP Chat; Claude / Codex IDE panel resume; Ghostty / Alma targets |
+| **Extension-only** | — | ACP Chat; Claude / Codex IDE panel resume; Ghostty targets |
 
 **Shared:** `catalog.db`, GTD tags, Notes, LLM settings (`settings.json`). Desktop extras live under `panelHome/.desktop/`.
 
@@ -93,7 +93,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 | **安装** | [下载 DMG](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=lucacicii.agent-resume-panel-v2) |
 | **文档** | 本仓库 | [panel-doc](https://github.com/lucacicii/agent-resume-panel-doc) |
 
-[更新日志](CHANGELOG.md) · [最新版本](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · 扩展：**2.6.10**
+[更新日志](CHANGELOG.md) · [最新版本](https://github.com/lucacicii/agent-resume-desktop-doc/releases/latest) · 扩展：**2.6.12**
 
 > **无云端 · 纯本机存储**  
 > 数据默认在 **`~/.agent-resume-panel`**（与 VS Code 扩展共用，可在设置中修改）。
@@ -139,7 +139,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 | **定位** | 独立 macOS 应用 — **Session OS + Memory** | VS Code / Cursor / VSCodium 侧边栏面板 |
 | **适合场景** | 日历日报、对报告 **Agent** 问答、内嵌 **Workbench** | 写代码时恢复会话；编辑器旁 **ACP Chat**；IDE 内 GTD / 笔记 |
 | **仅 Desktop** | 日 / 周 / 月 Digest；基于报告的语义回忆；xterm Workbench + Git 工具 | — |
-| **仅扩展** | — | ACP Chat；Claude / Codex 插件面板恢复；Ghostty / Alma |
+| **仅扩展** | — | ACP Chat；Claude / Codex 插件面板恢复；Ghostty |
 
 **共用：** `catalog.db`、GTD、Notes、LLM 设置（`settings.json`）。Desktop 私有数据在 `panelHome/.desktop/`。
 

@@ -22,7 +22,7 @@ Desktop **Sessions** is a **reference** surface: browse the shared catalog of ag
 
 ### Shared with the extension
 
-- Same providers: Codex, Claude Code, Antigravity, Grok Build, OpenCode, Pi, Alma  
+- Same providers: Codex, Claude Code, Antigravity, Grok Build, OpenCode, Pi  
 - Same `catalog.db` under panel home  
 - Hiding a session removes it from the panel catalog only; native provider history is not deleted by a catalog hide  
 
@@ -56,7 +56,7 @@ Desktop 的 **Sessions** 是 **参考** 视图：浏览共用的 Agent 会话目
 
 ### 与扩展共用
 
-- 同一批 Provider：Codex、Claude Code、Antigravity、Grok Build、OpenCode、Pi、Alma  
+- 同一批 Provider：Codex、Claude Code、Antigravity、Grok Build、OpenCode、Pi  
 - 同一 panel home 下的 `catalog.db`  
 - 隐藏仅影响面板目录，不会删除原生存储  
 
