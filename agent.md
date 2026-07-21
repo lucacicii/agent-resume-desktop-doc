@@ -10,17 +10,32 @@ Languages: [English](#english) | [简体中文](#简体中文)
 
 ### What it is
 
-The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your **digests and session history** (semantic retrieval when embeddings are configured). It is for recalling and reasoning about past work — not a full IDE replacement for coding agents (use [Workbench](workbench.md) or the VS Code extension for resume / ACP).
+The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your **digests, notes, and CLI sessions** (semantic retrieval when embeddings are configured). It is for recalling and reasoning about past work — not a full IDE replacement for coding agents (use [Workbench](workbench.md) or the VS Code extension for resume / ACP).
 
 ### Main workflows
 
 1. Open the **Agent** tab.  
 2. Create or select a **thread** (rename / delete as needed).  
-3. Ask questions such as “what did I work on last Tuesday?” or “summarize the auth refactor week”.  
+3. Ask questions such as “what did I work on last Tuesday?”, “find the codex session about auth”, or “summarize the auth refactor week”.  
 4. Watch **streaming** replies; cancel an in-flight ask if needed.  
 5. Use citations / linked context when shown to jump back into reports or sessions.  
 6. Open **Execution flow** below a reply to review the retrieval, model, and action steps behind it.  
 7. Clear a thread’s chat history when you want a clean slate.
+
+### Session tools (when tools are enabled)
+
+The Agent can call read-only tools against the local session catalog:
+
+| Tool | Purpose |
+| --- | --- |
+| `session_search` | Keyword search on titles / paths / summaries; **plus** summary-vector search when embeddings are configured |
+| `session_list` | Recent sessions with provider / project / GTD / time filters |
+| `session_read` | Metadata + cached `session_summary` for one session |
+| `session_read_transcript` | Short native transcript excerpt (capped; only when summary is not enough) |
+
+- Without embeddings, search still works via **keywords**.  
+- Semantic session search improves after sessions have **summaries** (Summarize / digest ensure-summaries) and embeddings are configured.  
+- Digests answer “what did I do that week”; session tools answer “which single CLI session”.
 
 ### Requirements
 
@@ -37,16 +52,18 @@ The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your 
 
 ### Privacy
 
-- Agent Q&A **sends retrieved local content and your prompts** to the third-party API you configure.  
+- Agent Q&A **sends retrieved local content and your prompts** to the third-party API you configure (including tool results such as summaries or short transcript excerpts).  
 - Do not ask questions that force secrets into the prompt if the endpoint is untrusted.  
 - Chat threads and execution-flow records are stored locally under panel home / desktop data. Recorded tool inputs and outputs are redacted for common secret fields and limited in length.
+- Session summary vectors (when enabled) live in Desktop’s local `desktop.db`.
 
 ### Tips
 
 1. Prefer concrete time ranges and project names in questions.  
 2. Generate or refresh relevant digests first for better recall.  
-3. Keep separate threads per topic (weekly review vs. one project).  
-4. Usage of LLM calls appears under **Settings → Usage**.
+3. Summarize important sessions so keyword and semantic session search work better.  
+4. Keep separate threads per topic (weekly review vs. one project).  
+5. Usage of LLM calls appears under **Settings → Usage**.
 
 ### Related
 
@@ -59,17 +76,32 @@ The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your 
 
 ### 是什么
 
-**Agent** 页签是 Desktop 的 **元 Agent**：用自然语言对 **回顾报告与会话历史** 提问（配置 embeddings 时支持语义检索）。适合回忆与梳理过往工作，而不是完整替代写代码的 Agent（恢复会话请用 [Workbench](workbench.md) 或 VS Code 扩展 / ACP）。
+**Agent** 页签是 Desktop 的 **元 Agent**：用自然语言对 **回顾报告、笔记与 CLI 会话** 提问（配置 embeddings 时支持语义检索）。适合回忆与梳理过往工作，而不是完整替代写代码的 Agent（恢复会话请用 [Workbench](workbench.md) 或 VS Code 扩展 / ACP）。
 
 ### 主要流程
 
 1. 打开 **Agent** 页签。  
 2. 新建或选择 **线程**（可重命名 / 删除）。  
-3. 提问，例如「上周二我在做什么」或「总结鉴权重构那一周」。  
+3. 提问，例如「上周二我在做什么」「找一下关于鉴权的 codex session」或「总结鉴权重构那一周」。  
 4. 查看 **流式** 回答；需要时可取消进行中的提问。  
 5. 有引用 / 关联上下文时，可跳回报告或会话。  
 6. 点击回答下方的 **执行流程**，查看检索、模型与操作步骤。  
 7. 需要干净上下文时可清空该线程聊天记录。
+
+### Session 工具（开启 tools 时）
+
+Agent 可对本地会话 catalog 调用只读工具：
+
+| 工具 | 作用 |
+| --- | --- |
+| `session_search` | 按标题 / 路径 / 摘要关键词搜索；配置 embeddings 时叠加 **摘要向量** 语义搜索 |
+| `session_list` | 按 provider / 项目 / GTD / 时间列出最近 session |
+| `session_read` | 读单条元数据与 `session_summary` |
+| `session_read_transcript` | 读取原生对话片段（有长度上限；仅在摘要不够时使用） |
+
+- 未配置 embeddings 时仍可用 **关键词** 搜索。  
+- 有 **会话摘要** 且配置了 embeddings 后，语义找 session 更准。  
+- 报告适合回答「那一周整体在忙什么」；session 工具适合回答「是哪一次 CLI 会话」。
 
 ### 前提
 
@@ -86,16 +118,18 @@ The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your 
 
 ### 隐私
 
-- Agent 问答会把 **检索到的本机内容与你的提示** 发往配置的第三方 API。  
+- Agent 问答会把 **检索到的本机内容与你的提示** 发往配置的第三方 API（含工具返回的摘要或短 transcript 片段）。  
 - 端点不可信时，避免在问题中带入密钥等敏感信息。  
 - 线程与执行流程记录保存在本机面板 / Desktop 数据目录。记录的工具输入与输出会对常见密钥字段脱敏，并限制长度。
+- Session 摘要向量（若启用）保存在本机 `desktop.db`。
 
 ### 提示
 
 1. 问题尽量带上时间范围与项目名。  
 2. 先生成或刷新相关回顾，回忆更准。  
-3. 按主题分线程（周回顾 vs 单项目）。  
-4. LLM 用量见 **Settings → 用量**。
+3. 重要 session 先生成摘要，关键词与语义搜索都更准。  
+4. 按主题分线程（周回顾 vs 单项目）。  
+5. LLM 用量见 **Settings → 用量**。
 
 ### 相关文档
 
