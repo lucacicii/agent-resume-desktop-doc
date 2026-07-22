@@ -19,7 +19,8 @@ The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your 
 3. Ask questions such as “what did I work on last Tuesday?” or “summarize the auth refactor week”.  
 4. Watch **streaming** replies; cancel an in-flight ask if needed.  
 5. Use citations / linked context when shown to jump back into reports or sessions.  
-6. Clear a thread’s chat history when you want a clean slate.
+6. Open **Execution flow** below a reply to review the retrieval, model, and action steps behind it.  
+7. Clear a thread’s chat history when you want a clean slate.
 
 ### Requirements
 
@@ -27,11 +28,18 @@ The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your 
 - Useful digests in [Report](report.md) improve answer quality for calendar-style questions.  
 - Without embeddings, retrieval quality may be limited to keyword / digest-level context depending on configuration.
 
+### Execution flow and approvals
+
+- The execution-flow summary separates **context retrieval**, **LLM requests**, and actual **tool actions**. A report, note, or session citation comes from retrieval; it is not itself a tool call.
+- Open the right-side flow panel to inspect each step. Inputs and outputs are collapsed by default; MCP actions also show their source and risk level.
+- Read-only actions proceed automatically. Write, launch, command, and network actions request approval by default. Delete and unknown-risk actions always request approval.
+- In **Settings → General → Agent actions**, **Always allow non-delete Agent actions** skips approval for classified non-delete actions. Use it only when you trust the configured model and tools.
+
 ### Privacy
 
 - Agent Q&A **sends retrieved local content and your prompts** to the third-party API you configure.  
 - Do not ask questions that force secrets into the prompt if the endpoint is untrusted.  
-- Chat threads are stored locally under panel home / desktop data.
+- Chat threads and execution-flow records are stored locally under panel home / desktop data. Recorded tool inputs and outputs are redacted for common secret fields and limited in length.
 
 ### Tips
 
@@ -60,7 +68,8 @@ The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your 
 3. 提问，例如「上周二我在做什么」或「总结鉴权重构那一周」。  
 4. 查看 **流式** 回答；需要时可取消进行中的提问。  
 5. 有引用 / 关联上下文时，可跳回报告或会话。  
-6. 需要干净上下文时可清空该线程聊天记录。
+6. 点击回答下方的 **执行流程**，查看检索、模型与操作步骤。  
+7. 需要干净上下文时可清空该线程聊天记录。
 
 ### 前提
 
@@ -68,11 +77,18 @@ The **Agent** tab is Desktop’s **meta-agent**: natural-language Q&A over your 
 - [Report](report.md) 中有相关回顾时，日历类问题效果更好。  
 - 未配置 embeddings 时，检索可能偏关键词 / 报告级上下文（视配置而定）。
 
+### 执行流程与授权
+
+- 执行流程会分别统计 **上下文检索**、**LLM 请求** 与实际的 **工具操作**。报告、笔记、会话引用来自检索，本身不算工具调用。
+- 打开右侧执行流程面板可查看每个步骤；输入和输出默认折叠，MCP 操作还会显示来源和风险级别。
+- 只读操作自动执行。写入、启动、命令和网络操作默认请求授权；删除和未知风险操作始终请求授权。
+- 在 **设置 → 通用 → Agent 操作** 中开启 **始终允许非删除 Agent 操作** 后，已分类的非删除操作会跳过授权。仅在信任当前模型与工具时开启。
+
 ### 隐私
 
 - Agent 问答会把 **检索到的本机内容与你的提示** 发往配置的第三方 API。  
 - 端点不可信时，避免在问题中带入密钥等敏感信息。  
-- 线程保存在本机面板 / Desktop 数据目录。
+- 线程与执行流程记录保存在本机面板 / Desktop 数据目录。记录的工具输入与输出会对常见密钥字段脱敏，并限制长度。
 
 ### 提示
 
