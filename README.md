@@ -38,7 +38,7 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 | Module | What it covers |
 |--------|----------------|
 | [Report](report.md) | Calendar, daily/weekly/monthly digests, GTD bar, analyze → apply |
-| [Agent](agent.md) | Natural-language Q&A over digests and history, threads |
+| [Agent](agent.md) | Natural-language Q&A over local work history, citations, tools, and threads |
 | [Workbench](workbench.md) | Embedded terminal, multi-tab resume, git status bar, explorer, git log |
 | [Sessions](sessions.md) | Reference list and read-only preview |
 | [Notes](notes.md) | Markdown editor shared with the extension |
@@ -115,7 +115,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 | 模块 | 内容 |
 |------|------|
 | [Report](report.md) | 日历、日/周/月报、GTD 条、分析并应用 |
-| [Agent](agent.md) | 基于报告与历史的自然语言问答、线程 |
+| [Agent](agent.md) | 基于本机工作历史的自然语言问答、引用、工具与线程 |
 | [Workbench](workbench.md) | 内嵌终端、多标签恢复、Git 状态栏、资源管理器、Git Log |
 | [Sessions](sessions.md) | 参考列表与只读预览 |
 | [Notes](notes.md) | 与扩展共用的 Markdown 笔记 |
