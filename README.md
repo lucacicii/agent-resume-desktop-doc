@@ -42,6 +42,7 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 | [Workbench](workbench.md) | Embedded terminal, multi-tab resume, git status bar, explorer, git log |
 | [Sessions](sessions.md) | Reference list and read-only preview |
 | [Notes](notes.md) | Markdown editor shared with the extension |
+| [MCP](mcp.md) | Register trusted local agents to use Notes, Reports, Sessions, and GTD tools |
 | [Settings & data](settings-and-data.md) | Settings panes, data directory, usage, in-app updates |
 
 ### Navigation (at a glance)
@@ -53,7 +54,7 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 | **Workbench** | Session list + embedded or external terminal |
 | **Notes** | Markdown notes |
 | **Sessions** (toolbar) | Reference list + preview |
-| **⚙ Settings** | General, models, sessions, workbench, report, data, usage, about |
+| **⚙ Settings** | General, models, sessions, workbench, report, data, MCP, usage, about |
 
 ### VS Code extension vs Desktop
 
@@ -119,6 +120,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 | [Workbench](workbench.md) | 内嵌终端、多标签恢复、Git 状态栏、资源管理器、Git Log |
 | [Sessions](sessions.md) | 参考列表与只读预览 |
 | [Notes](notes.md) | 与扩展共用的 Markdown 笔记 |
+| [MCP](mcp.md) | 为受信任的本机 Agent 注册 Notes、Reports、Sessions 与 GTD 工具 |
 | [设置与数据](settings-and-data.md) | 各设置页、数据目录、用量、应用内更新 |
 
 ### 导航一览
@@ -130,7 +132,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 | **Workbench** | 会话列表 + 嵌入式 / 外部终端 |
 | **Notes** | Markdown 笔记 |
 | **Sessions**（工具栏） | 参考列表 + 预览 |
-| **⚙ Settings** | 通用、模型、会话、工作台、Report、数据、用量、关于 |
+| **⚙ Settings** | 通用、模型、会话、工作台、Report、数据、MCP、用量、关于 |
 
 ### VS Code 扩展 vs Desktop
 
