@@ -39,11 +39,11 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 |--------|----------------|
 | [Report](report.md) | Calendar, daily/weekly/monthly digests, GTD bar, analyze → apply |
 | [Agent](agent.md) | Natural-language Q&A over local work history, citations, tools, and threads |
-| [Workbench](workbench.md) | Embedded terminal, multi-tab resume, git status bar, explorer, git log |
+| [Workbench](workbench.md) | Embedded terminal (themes), multi-tab resume, project search, scripts, Git select-commit, explorer |
 | [Sessions](sessions.md) | Reference list and read-only preview |
 | [Notes](notes.md) | Markdown editor shared with the extension |
 | [MCP](mcp.md) | Register trusted local agents to use Notes, Reports, Sessions, and GTD tools |
-| [Settings & data](settings-and-data.md) | Settings panes, data directory, usage, in-app updates |
+| [Settings & data](settings-and-data.md) | Settings panes, backup/merge, logs, data directory, usage, updates |
 
 ### Navigation (at a glance)
 
@@ -117,11 +117,11 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 |------|------|
 | [Report](report.md) | 日历、日/周/月报、GTD 条、分析并应用 |
 | [Agent](agent.md) | 基于本机工作历史的自然语言问答、引用、工具与线程 |
-| [Workbench](workbench.md) | 内嵌终端、多标签恢复、Git 状态栏、资源管理器、Git Log |
+| [Workbench](workbench.md) | 内嵌终端（配色）、多标签恢复、项目搜索、脚本、Git 选择提交、资源管理器 |
 | [Sessions](sessions.md) | 参考列表与只读预览 |
 | [Notes](notes.md) | 与扩展共用的 Markdown 笔记 |
 | [MCP](mcp.md) | 为受信任的本机 Agent 注册 Notes、Reports、Sessions 与 GTD 工具 |
-| [设置与数据](settings-and-data.md) | 各设置页、数据目录、用量、应用内更新 |
+| [设置与数据](settings-and-data.md) | 各设置页、备份/合并、日志、数据目录、用量、更新 |
 
 ### 导航一览
 

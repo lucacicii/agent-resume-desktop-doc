@@ -6,7 +6,7 @@ Languages: [English](#english) | [简体中文](#简体中文)
 
 ### Overview
 
-Agent Resume Desktop provides one local **Agent Resume MCP** service. It uses stdio, starts only when an MCP client invokes it, and reads the same local data directory as Desktop: `~/.agent-resume-panel` by default.
+Agent Resume Desktop provides one local **Agent Resume MCP** service. It uses stdio, starts only when an MCP client invokes it, and reads the same local data directory as Desktop: `~/.agent-resume-panel` by default. Registration configures a **headless Node** entry (`ELECTRON_RUN_AS_NODE` + the bundled core MCP CLI) so clients do not spawn a second Electron Dock icon.
 
 This is one service with **20 tools**, not 20 independent services:
 
@@ -91,7 +91,7 @@ An external MCP invocation cannot open Desktop's Workbench. Therefore, `session_
 
 ### 概览
 
-Agent Resume Desktop 提供一个本机 **Agent Resume MCP** 服务。它使用 stdio，仅在 MCP 客户端调用时启动，并读取与 Desktop 相同的本机数据目录，默认是 `~/.agent-resume-panel`。
+Agent Resume Desktop 提供一个本机 **Agent Resume MCP** 服务。它使用 stdio，仅在 MCP 客户端调用时启动，并读取与 Desktop 相同的本机数据目录，默认是 `~/.agent-resume-panel`。注册时写入 **无界面 Node** 启动方式（`ELECTRON_RUN_AS_NODE` + 内置 core MCP CLI），避免每个客户端再拉起一个 Electron Dock 图标。
 
 这是一个服务，包含 **20 个工具**，不是 20 个相互独立的服务：
 

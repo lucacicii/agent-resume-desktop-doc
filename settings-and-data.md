@@ -17,10 +17,12 @@ Use the **⚙** button in the top bar. Settings panes:
 | **General** | Language, historical backfill, startup-related options, Agent action approvals |
 | **Models** | OpenAI-compatible LLM / embeddings endpoints and models |
 | **Sessions** | Agent home paths, session list / sync related options |
-| **Workbench** | Default agent, ⌘T behavior, terminal-related defaults |
+| **Workbench** | Default agent, ⌘T behavior, **terminal theme** and related defaults |
 | **Report** | Digest / memory related preferences |
-| **Data** | Panel home path, open data folder, storage-oriented actions |
+| **Data** | Panel home path, open data folder, **backup export / merge import** |
+| **Logs** | Application error / warning log (redacted), clear, reveal in Finder |
 | **Usage** | Local LLM usage summary |
+| **MCP** | Register trusted local agents for Notes / Reports / Sessions tools |
 | **About** | Version, update check entry |
 
 Desktop settings are **not** VS Code `agentResume.*` settings. Shared values (e.g. LLM) may live in panel-home files so both products can reuse them; Desktop also keeps desktop-specific config (e.g. under panel home / `.desktop`).
@@ -54,6 +56,15 @@ CLI transcripts remain in native agent homes. Change panel home only if you unde
 
 ### Backup
 
+**In-app (recommended for Desktop data):**
+
+1. Open **Settings → Data** (backup section).  
+2. **Export backup** writes reports, notes, ACP chats, and vector indexes. External Agent transcript folders are **not** included.  
+3. Optionally **include API keys**, protected by a backup password (never stored in plaintext).  
+4. On another Mac, **Choose backup** then **Merge backup**. Newer matching records replace older ones.
+
+**Manual folder copy (full control):**
+
 1. Copy **`~/.agent-resume-panel`** (or custom panel home), including `.desktop`.  
 2. Copy native agent homes for full transcripts.  
 3. Reinstall the app from the DMG on a new machine, then restore the folder before first heavy sync if possible.
@@ -86,10 +97,12 @@ CLI transcripts remain in native agent homes. Change panel home only if you unde
 | **通用** | 语言、历史回填、启动相关、Agent 操作授权 |
 | **模型** | OpenAI 兼容 LLM / embeddings 端点与模型 |
 | **Sessions** | 各 Agent 目录、会话列表 / 同步相关 |
-| **Workbench** | 默认 Agent、⌘T 行为、终端相关默认 |
+| **Workbench** | 默认 Agent、⌘T 行为、**终端主题** 与相关默认 |
 | **Report** | 回顾 / Memory 相关偏好 |
-| **数据** | Panel home 路径、打开数据目录等 |
+| **数据** | Panel home 路径、打开数据目录、**备份导出 / 合并导入** |
+| **日志** | 应用错误 / 警告日志（脱敏）、清空、在访达中显示 |
 | **用量** | 本机 LLM 用量汇总 |
+| **MCP** | 为受信任的本机 Agent 注册 Notes / Reports / Sessions 工具 |
 | **关于** | 版本、更新检查入口 |
 
 Desktop 设置 **不是** VS Code 的 `agentResume.*`。可共用的值（如 LLM）可能写在 panel home 文件中供两产品复用；Desktop 另有桌面端专用配置（如 `.desktop`）。
@@ -122,6 +135,15 @@ CLI 原文仍在各 Agent 原生目录。修改 panel home 时请确保两产品
 - 首次启动系统拦截步骤见 [README 安装](README.md)。
 
 ### 备份
+
+**应用内（推荐备份 Desktop 数据）：**
+
+1. 打开 **设置 → 数据**（备份区域）。  
+2. **导出备份** 包含报告、笔记、ACP 聊天与向量索引；**不包含** 外部 Agent 原始会话目录。  
+3. 可选 **包含 API Key**，用备份密码加密（不会以明文写入备份）。  
+4. 在另一台 Mac 上 **选择备份** 后 **合并备份**；较新的同名记录会覆盖较旧记录。
+
+**手动复制目录（完全控制）：**
 
 1. 备份 **`~/.agent-resume-panel`**（含 `.desktop`）。  
 2. 备份原生 Agent 目录以保留完整对话。  
