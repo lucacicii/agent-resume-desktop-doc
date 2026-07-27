@@ -8,6 +8,40 @@ Update this file before each Desktop release (`pnpm run release:desktop:mac`).
 
 ## English
 
+### [0.2.8]
+
+#### Added
+
+- **ACP visual chat in Workbench**: create and resume Claude Code, Codex, Grok Build, OpenCode, and Pi sessions in a native chat pane; conversations are indexed with the shared session catalog
+- **ACP setup and connection test**: configure ACP agents in **Settings → Workbench**, test the selected model or agent before starting, and reuse the latest available command where no input prompt is required
+- **ACP collaboration and commands**: choose supported modes such as **Plan**, open an agent-provided dynamic `/` command menu, and answer agent questions within the Workbench
+- **ACP tool interaction**: inspect streamed terminal and file-system activity, review file reads, and explicitly approve or deny requested actions
+
+#### Improved
+
+- Telegram-style ACP chat with clearer streamed tool states, attachments, direct command submission, and automatic titles
+- Shared ACP persistence, catalog previews, external-file change detection, connection reuse, and safer session recovery
+
+#### Fixed
+
+- Empty ACP sessions no longer fail to render a preview
+- File-system tool calls and approval prompts render and resolve correctly in the chat pane
+
+### [0.2.7]
+
+#### Added
+
+- **Terminal renderer setting**: choose WebGL (default) or Canvas in **Settings → Workbench** to improve CJK layout stability without ending the active PTY session
+
+#### Improved
+
+- Embedded xterm CJK fallback fonts, Unicode 11 widths, glyph rescaling, and tighter cell metrics keep mixed Chinese/English lines aligned
+- WebGL glyph atlas refreshes after zoom, display scale, and theme changes; desktop locale catalogs also reload during development
+
+#### Fixed
+
+- WebGL terminal layout corruption on hover falls back safely to Canvas; missing terminal-renderer and common-save strings resolve in all desktop locales
+
 ### [0.2.6]
 
 #### Added
@@ -232,6 +266,40 @@ Update this file before each Desktop release (`pnpm run release:desktop:mac`).
 ---
 
 ## 简体中文
+
+### [0.2.8]
+
+#### 新增
+
+- **Workbench ACP 可视化聊天**：可在原生聊天面板中创建和恢复 Claude Code、Codex、Grok Build、OpenCode、Pi 会话；对话会进入共用会话索引
+- **ACP 设置与连接测试**：在 **设置 → Workbench** 配置 ACP Agent，启动前测试模型或 Agent；无需输入提示时可复用最近可用命令
+- **ACP 协作与命令**：选择 Agent 支持的协作模式（如 **Plan**）、打开动态 `/` 命令菜单，并直接在 Workbench 中回答 Agent 提问
+- **ACP 工具交互**：查看流式终端和文件系统操作、检查读取文件，并明确允许或拒绝请求的操作
+
+#### 改进
+
+- Telegram 风格 ACP 聊天，流式工具状态、附件、直接提交命令与自动标题更清晰
+- 完善 ACP 共用存储、目录预览、外部文件变更监听、连接复用与会话恢复
+
+#### 修复
+
+- 空 ACP 会话预览不再报错
+- 文件系统工具调用与授权提示可在聊天面板中正确显示和处理
+
+### [0.2.7]
+
+#### 新增
+
+- **终端渲染器设置**：在 **设置 → Workbench** 选择 WebGL（默认）或 Canvas，改善 CJK 排版稳定性且不会中断当前 PTY 会话
+
+#### 改进
+
+- 内嵌 xterm 加入 CJK 回退字体、Unicode 11 宽度、字形缩放与更紧凑单元格指标，保证中英文混排对齐
+- 缩放、显示比例和主题变化后会刷新 WebGL 字形图集；开发时桌面端语言目录也会重新加载
+
+#### 修复
+
+- WebGL 终端悬停时的布局异常会安全回退至 Canvas；所有桌面语言均可正确解析终端渲染器与通用保存文案
 
 ### [0.2.6]
 

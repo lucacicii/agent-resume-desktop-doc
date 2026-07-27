@@ -33,6 +33,15 @@ Languages: [English](#english) | [简体中文](#简体中文)
 | **Git changes** | Stage/select files, commit only selected paths, push / pull, and inspect diffs |
 | **Git log graph** | Branch graph and commit node details in the side panel |
 
+### ACP visual chat
+
+Choose an **ACP · …** default agent in **Settings → Workbench → New Session**, then create a session from Workbench. ACP sessions stay in the Workbench tab strip and are saved with the shared local session catalog, so you can reopen them later.
+
+- Test the selected model or agent connection in Settings before creating a session.
+- Use the mode control when the agent offers one, such as **Plan**; type `/` to browse the agent-provided command menu.
+- The chat shows terminal and file-system tool activity as it streams. File reads are available for inspection; permission requests require an explicit **Allow** or **Deny** decision.
+- When an agent asks a question, answer it in the chat to let the run continue. You can also submit a cached command directly when the agent does not require an input prompt.
+
 ### Keyboard & defaults
 
 - **⌘T** can be configured for **new session** or **new terminal** under Workbench settings.  
@@ -79,6 +88,15 @@ Languages: [English](#english) | [简体中文](#简体中文)
 | **嵌套 Git 扫描** | 发现项目树下的 git 仓库 |
 | **Git 变更** | 勾选文件、仅提交选中路径、push / pull 与 diff 查看 |
 | **Git Log 图** | 侧边栏分支图与提交节点信息 |
+
+### ACP 可视化聊天
+
+在 **设置 → Workbench → 新建会话** 选择 **ACP · …** 默认 Agent 后，从 Workbench 新建会话。ACP 会话会保留在 Workbench 标签栏中，并存入共用本机会话索引，因此之后可再次打开。
+
+- 新建会话前，可在设置中测试所选模型或 Agent 的连接。
+- 当 Agent 提供协作模式时，可用模式控件选择（如 **Plan**）；输入 `/` 可浏览 Agent 提供的命令菜单。
+- 聊天会流式显示终端和文件系统工具操作。读取文件可查看；权限请求必须明确选择 **允许** 或 **拒绝**。
+- Agent 提问时直接在聊天中作答即可继续执行。若 Agent 不要求输入提示，也可直接提交缓存的命令。
 
 ### 快捷键与默认值
 

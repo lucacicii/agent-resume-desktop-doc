@@ -39,7 +39,7 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 |--------|----------------|
 | [Report](report.md) | Calendar, daily/weekly/monthly digests, GTD bar, analyze → apply |
 | [Agent](agent.md) | Natural-language Q&A over local work history, citations, tools, and threads |
-| [Workbench](workbench.md) | Embedded terminal (themes), multi-tab resume, project search, scripts, Git select-commit, explorer |
+| [Workbench](workbench.md) | Embedded terminal (themes), ACP visual chat, multi-tab resume, project search, scripts, Git select-commit, explorer |
 | [Sessions](sessions.md) | Reference list and read-only preview |
 | [Notes](notes.md) | Markdown editor shared with the extension |
 | [MCP](mcp.md) | Register trusted local agents to use Notes, Reports, Sessions, and GTD tools |
@@ -51,7 +51,7 @@ Requirements: macOS 12+, Apple Silicon or Intel. Version history: [Changelog](CH
 |-------|------|
 | **Report** (default) | Calendar · digests · GTD bar · day detail |
 | **Agent** | Q&A over digests / work history |
-| **Workbench** | Session list + embedded or external terminal |
+| **Workbench** | Session list + ACP visual chat + embedded or external terminal |
 | **Notes** | Markdown notes |
 | **Sessions** (toolbar) | Reference list + preview |
 | **⚙ Settings** | General, models, sessions, workbench, report, data, MCP, usage, about |
@@ -117,7 +117,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 |------|------|
 | [Report](report.md) | 日历、日/周/月报、GTD 条、分析并应用 |
 | [Agent](agent.md) | 基于本机工作历史的自然语言问答、引用、工具与线程 |
-| [Workbench](workbench.md) | 内嵌终端（配色）、多标签恢复、项目搜索、脚本、Git 选择提交、资源管理器 |
+| [Workbench](workbench.md) | 内嵌终端（配色）、ACP 可视化聊天、多标签恢复、项目搜索、脚本、Git 选择提交、资源管理器 |
 | [Sessions](sessions.md) | 参考列表与只读预览 |
 | [Notes](notes.md) | 与扩展共用的 Markdown 笔记 |
 | [MCP](mcp.md) | 为受信任的本机 Agent 注册 Notes、Reports、Sessions 与 GTD 工具 |
@@ -129,7 +129,7 @@ macOS 导向的 **Session OS + Memory** 桌面应用：日历回顾 AI 工作记
 |------|------|
 | **Report**（默认） | 日历 · 回顾 · GTD 条 · 日详情 |
 | **Agent** | 对报告 / 工作历史问答 |
-| **Workbench** | 会话列表 + 嵌入式 / 外部终端 |
+| **Workbench** | 会话列表 + ACP 可视化聊天 + 嵌入式 / 外部终端 |
 | **Notes** | Markdown 笔记 |
 | **Sessions**（工具栏） | 参考列表 + 预览 |
 | **⚙ Settings** | 通用、模型、会话、工作台、Report、数据、MCP、用量、关于 |
