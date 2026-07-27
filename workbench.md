@@ -15,11 +15,12 @@ Languages: [English](#english) | [简体中文](#简体中文)
 ### Core flows
 
 1. Open the **Workbench** tab.  
-2. Browse the session list; create a new session if needed (default agent: **Settings → Workbench**).  
-3. Resume in the **embedded terminal** (multi-tab) or launch an **external** terminal.  
-4. Use the detail header for project path and **branch** controls; the status bar still shows live **cwd** (including nested repos when detected).  
-5. Open **Search** or **Scripts** from the detail toolbar, or expand scripts under **Explorer**.  
-6. In **Git**, select specific changed files before commit when you do not want to commit everything.
+2. Browse the session list; create a new session if needed (default agent: **Settings → Workbench → New Session**).  
+3. Resume CLI sessions in the **embedded terminal** (multi-tab) or **external** terminal.  
+4. If the default target is an **ACP · …** agent, **New session** opens a **visual chat pane** in the same tab strip (Agent Client Protocol; Claude Code, Codex, Grok Build, OpenCode, Pi).  
+5. Use the detail header for project path and **branch** controls; watch the **status bar** for live **cwd** and **git branch** (including nested repos when detected).  
+6. Open **Search** or **Scripts** from the detail toolbar, or expand scripts under **Explorer**; click the status bar branch to switch branches when Git IPC is available.  
+7. In **Git**, select specific changed files before commit when you do not want to commit everything.
 
 ### Side panel
 
@@ -61,11 +62,12 @@ Languages: [English](#english) | [简体中文](#简体中文)
 ### 核心流程
 
 1. 打开 **Workbench** 页签。  
-2. 浏览会话列表；需要时新建会话（默认 Agent：**Settings → Workbench**）。  
-3. 用 **内嵌终端**（多标签）恢复，或启动 **外部终端**。  
-4. 在详情头查看项目路径与 **分支** 控件；状态栏仍显示实时 **cwd**（可识别嵌套仓库）。  
-5. 从详情工具栏打开 **Search** 或 **Scripts**，也可在 **Explorer** 下展开脚本区。  
-6. 在 **Git** 中可先勾选变更文件再提交，不必一次提交全部改动。
+2. 浏览会话列表；需要时新建会话（默认 Agent：**Settings → Workbench → New Session**）。  
+3. CLI 会话用 **内嵌终端**（多标签）或 **外部终端** 恢复。  
+4. 若默认目标为 **ACP · …** Agent，**新建会话**会在同一标签栏打开 **可视化聊天**（Agent Client Protocol；支持 Claude Code、Codex、Grok Build、OpenCode、Pi）。  
+5. 在详情头查看项目路径与 **分支** 控件；在 **状态栏** 查看实时 **cwd** 与 **git 分支**（可识别嵌套仓库）。  
+6. 从详情工具栏打开 **Search** 或 **Scripts**，也可在 **Explorer** 下展开脚本区；Git IPC 可用时可点击状态栏分支切换分支。  
+7. 在 **Git** 中可先勾选变更文件再提交，不必一次提交全部改动。
 
 ### 侧边栏
 
