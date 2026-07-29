@@ -8,6 +8,25 @@ Update this file before each Desktop release (`pnpm run release:desktop:mac`).
 
 ## English
 
+### [0.2.9]
+
+#### Added
+
+- **Workbench Quick Access**: choose a project quickly before opening files or sessions
+- **Workbench file operations**: copy paths and cut, copy, paste, and delete files from the project explorer
+- **Complete session history**: Workbench and Sessions can display the full merged catalog and ACP session list
+
+#### Improved
+
+- **Workspace file sync**: Workbench watches project files, refreshes external edits, and warns about conflicts or deleted files in open editors
+- **Git workflow**: inspect inline diffs with find navigation, get clearer operation notifications, and keep the editor and explorer in sync
+- **Workbench navigation**: project selection, explorer refresh, and pending-session binding are more reliable
+
+#### Fixed
+
+- Git push clears the commit input after a successful operation
+- File-path copy actions use the correct localized desktop label
+
 ### [0.2.8]
 
 #### Added
@@ -266,6 +285,25 @@ Update this file before each Desktop release (`pnpm run release:desktop:mac`).
 ---
 
 ## 简体中文
+
+### [0.2.9]
+
+#### 新增
+
+- **Workbench Quick Access**：在打开文件或会话前快速选择项目
+- **Workbench 文件操作**：在项目资源管理器中复制路径，以及剪切、复制、粘贴和删除文件
+- **完整会话历史**：Workbench 与 Sessions 可展示合并后的全部目录会话与 ACP 会话
+
+#### 改进
+
+- **工作区文件同步**：Workbench 监听项目文件，刷新外部编辑，并在打开的编辑器文件发生冲突或被删除时给出提示
+- **Git 工作流**：支持带查找导航的内联 diff、更清晰的操作通知，并保持编辑器与资源管理器状态同步
+- **Workbench 导航**：项目选择、资源管理器刷新与待同步会话绑定更加可靠
+
+#### 修复
+
+- Git push 成功后会清空提交输入框
+- 文件路径复制操作使用正确的桌面本地化文案
 
 ### [0.2.8]
 
