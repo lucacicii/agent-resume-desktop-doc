@@ -21,7 +21,7 @@ Languages: [English](#english) | [简体中文](#简体中文)
 5. Use the detail header for project path and **branch** controls; watch the **status bar** for live **cwd** and **git branch** (including nested repos when detected).  
 6. Open **Search** or **Scripts** from the detail toolbar, or expand scripts under **Explorer**; click the status bar branch to switch branches when Git IPC is available.  
 7. In **Git**, select specific changed files before commit when you do not want to commit everything; open a changed file to inspect an inline diff and search within it.
-8. In **Explorer**, right-click a file to inspect its Git history across local and remote-tracking branches, including commits before renames. You can also copy paths or cut, copy, paste, and delete files. Open editors watch the workspace and report external changes, conflicts, and deleted files.
+8. In **Explorer**, right-click a file to inspect its Git history across local and remote-tracking branches, including commits before renames. Right-click a folder to discard Git changes under that directory, or use context menus on changed files to open them or copy absolute / relative paths. Open editors watch the workspace and report external changes, conflicts, and deleted files.
 
 ### Side panel
 
@@ -78,7 +78,7 @@ Choose an **ACP · …** default agent in **Settings → Workbench → New Sessi
 5. 在详情头查看项目路径与 **分支** 控件；在 **状态栏** 查看实时 **cwd** 与 **git 分支**（可识别嵌套仓库）。  
 6. 从详情工具栏打开 **Search** 或 **Scripts**，也可在 **Explorer** 下展开脚本区；Git IPC 可用时可点击状态栏分支切换分支。  
 7. 在 **Git** 中可先勾选变更文件再提交，不必一次提交全部改动；打开变更文件可查看内联 diff 并在其中查找。
-8. 在 **Explorer** 中右键文件，可查看本地分支和远程跟踪分支中的 Git 提交历史，并追溯文件改名前的记录；也可复制路径，以及剪切、复制、粘贴和删除文件。打开的编辑器会监听工作区，并提示外部修改、冲突和文件删除。
+8. 在 **Explorer** 中右键文件可查看本地分支与远程跟踪分支中的 Git 提交历史（包含文件重名前的记录）；右键目录可一键回退该目录下的 Git 改动；在 Git 变更项右键菜单中可直接打开文件或复制绝对/相对路径。打开的编辑器会监听工作区，并提示外部修改、冲突和文件删除。
 
 ### 侧边栏
 
