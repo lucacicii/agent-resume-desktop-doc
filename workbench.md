@@ -21,13 +21,13 @@ Languages: [English](#english) | [简体中文](#简体中文)
 5. Use the detail header for project path and **branch** controls; watch the **status bar** for live **cwd** and **git branch** (including nested repos when detected).  
 6. Open **Search** or **Scripts** from the detail toolbar, or expand scripts under **Explorer**; click the status bar branch to switch branches when Git IPC is available.  
 7. In **Git**, select specific changed files before commit when you do not want to commit everything; open a changed file to inspect an inline diff and search within it.
-8. In **Explorer**, copy a path or cut, copy, paste, and delete files. Open editors watch the workspace and report external changes, conflicts, and deleted files.
+8. In **Explorer**, right-click a file to inspect its Git history across local and remote-tracking branches, including commits before renames. You can also copy paths or cut, copy, paste, and delete files. Open editors watch the workspace and report external changes, conflicts, and deleted files.
 
 ### Side panel
 
 | Tool | Purpose |
 |------|---------|
-| **Explorer** | Browse project files; shows Git tracking / change hints when available |
+| **Explorer** | Browse project files; right-click a file for all-branch Git history and rename tracking |
 | **Search** | Find text in the selected project (match case, whole word, regex); open hits in the file editor |
 | **Scripts** | Discover and run project scripts (npm / pnpm / yarn / bun, Make, Gradle, Python, Cargo) into the active terminal |
 | **Nested git scan** | Discover git repos under the project tree |
@@ -78,13 +78,13 @@ Choose an **ACP · …** default agent in **Settings → Workbench → New Sessi
 5. 在详情头查看项目路径与 **分支** 控件；在 **状态栏** 查看实时 **cwd** 与 **git 分支**（可识别嵌套仓库）。  
 6. 从详情工具栏打开 **Search** 或 **Scripts**，也可在 **Explorer** 下展开脚本区；Git IPC 可用时可点击状态栏分支切换分支。  
 7. 在 **Git** 中可先勾选变更文件再提交，不必一次提交全部改动；打开变更文件可查看内联 diff 并在其中查找。
-8. 在 **Explorer** 中可复制路径，以及剪切、复制、粘贴和删除文件。打开的编辑器会监听工作区，并提示外部修改、冲突和文件删除。
+8. 在 **Explorer** 中右键文件，可查看本地分支和远程跟踪分支中的 Git 提交历史，并追溯文件改名前的记录；也可复制路径，以及剪切、复制、粘贴和删除文件。打开的编辑器会监听工作区，并提示外部修改、冲突和文件删除。
 
 ### 侧边栏
 
 | 工具 | 作用 |
 |------|------|
-| **Explorer** | 浏览项目文件；可显示 Git 跟踪 / 变更提示 |
+| **Explorer** | 浏览项目文件；右键查看全分支 Git 历史并跟踪文件改名 |
 | **Search** | 在当前项目中检索文本（大小写 / 整词 / 正则），点击结果在编辑器中打开 |
 | **Scripts** | 发现并运行项目脚本（npm / pnpm / yarn / bun、Make、Gradle、Python、Cargo），写入当前终端 |
 | **嵌套 Git 扫描** | 发现项目树下的 git 仓库 |
