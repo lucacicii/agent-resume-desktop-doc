@@ -56,17 +56,18 @@ CLI transcripts remain in native agent homes. Change panel home only if you unde
 
 ### Backup
 
-**In-app (recommended for Desktop data):**
+**In-app:**
 
-1. Open **Settings → Data** (backup section).  
-2. **Export backup** writes reports, notes, ACP chats, and vector indexes. External Agent transcript folders are **not** included.  
-3. Optionally **include API keys**, protected by a backup password (never stored in plaintext).  
-4. On another Mac, **Choose backup** then **Merge backup**. Newer matching records replace older ones.
+1. Open **Settings → Data** (Backup). Choose **Local ZIP** or **iCloud Drive**.
+2. **Native Agent conversations** are included by default. The app includes only recognized conversation records for configured Codex, Claude, Grok, Pi, Cursor CLI, Antigravity, and OpenCode homes. Credentials, Agent configuration, caches, logs, downloads, and Cursor IDE conversation bodies are excluded.
+3. A local ZIP is compatible with the existing merge flow and can contain readable native conversation content. Store it securely. API keys remain optional and are encrypted with the backup password.
+4. iCloud Drive backups are written as encrypted `.arbak` files in `~/Library/Mobile Documents/com~apple~CloudDocs/Agent Resume/Backups`. A password is always required; it is never saved. Agent Resume reports that the file is saved, while macOS performs the actual iCloud sync. The latest 10 managed backups created by each Mac are retained.
+5. Choose a ZIP or select an iCloud backup to preview it. **Restore native Agent conversations** is off by default. The merge keeps newer local native files and reports conflicts; it never copies Agent configuration or authentication files. If a provider exceeds the per-file or archive size limits, that provider is skipped and the backup shows an actionable warning; the rest of the backup still completes.
 
 **Manual folder copy (full control):**
 
-1. Copy **`~/.agent-resume-panel`** (or custom panel home), including `.desktop`.  
-2. Copy native agent homes for full transcripts.  
+1. Copy **`~/.agent-resume-panel`** (or custom panel home), including `.desktop`.
+2. Copy native agent homes separately only when you need files outside the supported conversation set.
 3. Reinstall the app from the DMG on a new machine, then restore the folder before first heavy sync if possible.
 
 ### Privacy
@@ -136,17 +137,18 @@ CLI 原文仍在各 Agent 原生目录。修改 panel home 时请确保两产品
 
 ### 备份
 
-**应用内（推荐备份 Desktop 数据）：**
+**应用内：**
 
-1. 打开 **设置 → 数据**（备份区域）。  
-2. **导出备份** 包含报告、笔记、ACP 聊天与向量索引；**不包含** 外部 Agent 原始会话目录。  
-3. 可选 **包含 API Key**，用备份密码加密（不会以明文写入备份）。  
-4. 在另一台 Mac 上 **选择备份** 后 **合并备份**；较新的同名记录会覆盖较旧记录。
+1. 打开 **设置 → 数据**（备份），选择 **本地 ZIP** 或 **iCloud Drive**。
+2. 默认包含 **原始 Agent 对话**。应用只会从已配置的 Codex、Claude、Grok、Pi、Cursor CLI、Antigravity 与 OpenCode 目录收集可识别的对话记录；不会收集凭据、Agent 配置、缓存、日志、下载资源或 Cursor IDE 的对话正文。
+3. 本地 ZIP 与原有合并流程兼容，也可能包含可直接阅读的原始对话，请安全保存。API Key 仍为可选项，并使用备份密码加密。
+4. iCloud Drive 备份会保存为 `~/Library/Mobile Documents/com~apple~CloudDocs/Agent Resume/Backups` 中的加密 `.arbak` 文件，始终需要密码且不会保存密码。应用只提示“已保存”，实际 iCloud 同步由 macOS 完成。每台 Mac 仅保留自己创建的最近 10 份受管备份。
+5. 选择 ZIP 或 iCloud 备份后可先预览。**恢复原始 Agent 对话** 默认关闭；合并会保留本机较新的原始文件并报告冲突，绝不会复制 Agent 配置或认证文件。如果某个 Provider 超过单文件或归档容量限制，该 Provider 会被跳过并显示可操作的警告，其余备份仍会完成。
 
 **手动复制目录（完全控制）：**
 
-1. 备份 **`~/.agent-resume-panel`**（含 `.desktop`）。  
-2. 备份原生 Agent 目录以保留完整对话。  
+1. 备份 **`~/.agent-resume-panel`**（含 `.desktop`）。
+2. 只有在需要受支持对话集合以外的文件时，才单独复制原生 Agent 目录。
 3. 新机器安装 DMG 后，尽量在大量同步前恢复该目录。
 
 ### 隐私
