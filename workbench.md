@@ -46,6 +46,8 @@ Choose an **ACP · …** default agent in **Settings → Workbench → New Sessi
 ### Keyboard & defaults
 
 - **⌘T** can be configured for **new session** or **new terminal** under Workbench settings.  
+- **⌘← / ⌘→** switch to the previous / next tab within the current group.  
+- **⌘↑ / ⌘↓** switch between the **session**, **terminal**, and **code** groups, skipping empty groups. When the selected tab is a terminal session, focus moves to its TUI input.
 - Default agent for new sessions is set in **Settings → Workbench**.
 
 ### Tips
@@ -103,6 +105,8 @@ Choose an **ACP · …** default agent in **Settings → Workbench → New Sessi
 ### 快捷键与默认值
 
 - **⌘T** 可在 Workbench 设置中配置为 **新建会话** 或 **新建终端**。  
+- **⌘← / ⌘→** 在当前组内切换到前一个 / 后一个标签。  
+- **⌘↑ / ⌘↓** 在 **session / terminal / code** 三组之间切换并跳过空组；跳转到会话终端后会自动聚焦 TUI 输入框。
 - 新建会话的默认 Agent 在 **Settings → Workbench**。
 
 ### 提示
