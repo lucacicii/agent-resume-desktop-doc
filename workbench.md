@@ -56,7 +56,8 @@ Choose an **ACP · …** default agent in **Settings → Workbench → New Sessi
 2. Pick a **Terminal theme** under **Settings → Workbench** (Default Dark/Light, Solarized, One Dark, Dracula); open tabs update immediately.  
 3. Use external terminal if you rely on a custom shell / terminal app workflow.  
 4. Closing a terminal/editor tab focuses the most recently used panel.  
-5. Terminal features depend on a healthy PTY host; other Desktop tabs still work if the terminal subsystem fails to load.
+5. Terminal features depend on a healthy PTY host; other Desktop tabs still work if the terminal subsystem fails to load.  
+6. **Jump to top / bottom** controls appear in embedded terminals: for streaming CLIs (Codex) they scroll the terminal history, and for full-screen TUIs (Claude Code, Prime Agent, …) they scroll the agent's own viewport.
 
 ### Related
 
@@ -115,7 +116,8 @@ Choose an **ACP · …** default agent in **Settings → Workbench → New Sessi
 2. 在 **设置 → Workbench** 选择 **终端主题**（Default Dark/Light、Solarized、One Dark、Dracula）；已打开标签即时生效。  
 3. 依赖自定义 shell / 终端 App 时用外部终端。  
 4. 关闭终端 / 编辑器标签后会激活最近使用的面板。  
-5. 终端依赖 PTY；若终端子系统加载失败，其它页签仍可使用。
+5. 终端依赖 PTY；若终端子系统加载失败，其它页签仍可使用。  
+6. 内嵌终端支持**跳到顶部 / 回到底部**：流式 CLI（Codex）直接滚动终端历史；全屏 TUI（Claude Code、Prime Agent 等）会滚动 Agent 自身的视图。
 
 ### 相关文档
 
